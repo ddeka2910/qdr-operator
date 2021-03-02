@@ -51,7 +51,7 @@ before_install:
   - sudo mv kubectl /usr/local/bin/
 
   # Create a new Kubernetes cluster using KinD
-  - sudo kind create cluster
+  - kind create cluster
   - kubectl cluster-info
 
   # Install Operator SDK
